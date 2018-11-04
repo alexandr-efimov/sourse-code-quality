@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class NamingTask {
 
+    // get multiple of 5 from provided elements
     private List<Integer> getThem(List<Integer> integers) {
         List<Integer> list = new ArrayList<>();
         for (Integer x : integers)
