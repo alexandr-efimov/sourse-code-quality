@@ -58,18 +58,27 @@ class Naming {
         String[] mediaItemsStringArray;
         String phoneString;
 
+
+        String firstName;
+        String name;
+        boolean active;
+        boolean blocked;
+
         String string;
         String strName;
         boolean bActive;
+        boolean boolBlocked;
+    }
 
+    class NamingSamples {
 
-        List<User> findStoredFromProvided(List<User> users) {
+        List<User> find(List<User> users) { // find what?
             if (Objects.isNull(users) || users.isEmpty()) {
                 return Collections.emptyList();
             }
 
-            List<String> strings = users.stream().map(User::getId).collect(toList()); // naming matters! why not ids?
-            List<String> anotherStrings = findStoredFromIds(strings); // again naming matters! what are the strings?
+            List<String> strings = users.stream().map(User::getId).collect(toList()); // naming matters! what is it?
+            List<String> anotherStrings = findStoredFromIds(strings); // again naming matters! what is it?
 
             return users.stream()
                     .filter(user -> anotherStrings.contains(user.getId()))
@@ -87,5 +96,11 @@ class Naming {
                     .filter(id -> id.startsWith("dummyIdPrefix"))
                     .collect(toList());
         }
+    }
+
+    class Address {
+        String addressCity;
+        String addressHomeNumber;
+        String addressPostCode;
     }
 }
