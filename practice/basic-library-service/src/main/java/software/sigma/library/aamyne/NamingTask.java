@@ -1,6 +1,7 @@
-package software.sigma.library;
+package software.sigma.library.aamyne;
 
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -9,8 +10,6 @@ import java.util.stream.IntStream;
 
 import static java.util.Collections.emptyList;
 import static java.util.stream.Collectors.toList;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class NamingTask {
 
@@ -33,17 +32,17 @@ class NamingTask {
         List<Integer> expected = items.stream().filter(number -> number % 5 == 0).collect(toList());
 
         List<Integer> result = getThem(items);
-        assertEquals(expected, result);
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
     void testGetThemShouldReturnEmptyForEmptyParam() {
         List<Integer> result = getThem(emptyList());
-        assertEquals(emptyList(), result);
+        Assertions.assertEquals(emptyList(), result);
     }
 
     @Test
     void testGetThemShouldBeErrorForNullParam() {
-        assertThrows(IllegalArgumentException.class, () -> getThem(null));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> getThem(null));
     }
 }

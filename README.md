@@ -5,13 +5,16 @@ Practice tasks are slitted into multiple groups:
 
 
 # Basic part
-Tasks are to refactor simple code smells, according to main clean code principles. During refactoring take attention 
+Tasks are to refactor everything you think looks strange/unclear/has code smells, according to main clean code 
+principles
+. During refactoring take attention 
 to 
 - naming
 - functions
 - comments
 - formatting
 - classes and objects 
+- error handling
 
 
 # Advanced
