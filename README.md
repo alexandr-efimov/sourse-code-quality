@@ -21,4 +21,4 @@ to
 Simple project with code smells and bad practices usage to be refactored. Taken as assumption that during refactoring 
 you will go according
 clean code related principles, practices and refactoring techniques. Anti patterns used in 
-project should be avoided and changed to best practices usage.
+project should be avoided and replaced best practices.

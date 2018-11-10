@@ -27,6 +27,14 @@ class MathOperationUtilsTest {
     }
 
     @Test
+    void getThemShouldBeStableToNullValues() {
+        List<Integer> items = Arrays.asList(1, null, 2, null);
+
+        List<Integer> result = getThem(items);
+        assertEquals(emptyList(), result);
+    }
+
+    @Test
     void getThemShouldReturnEmptyForEmptyParam() {
         List<Integer> result = getThem(emptyList());
         assertEquals(emptyList(), result);
@@ -40,7 +48,7 @@ class MathOperationUtilsTest {
     @Test
     void sumIntegerNumbersShouldBeSameToExpected() {
         List<Integer> sourceNumbers = Arrays.asList(1, 2, 3, 4);
-        Integer expectedResult = sourceNumbers.stream().reduce(Integer::sum).get();
+        Integer expectedResult = sourceNumbers.stream().reduce(Integer::sum).orElseThrow(IllegalStateException::new);
 
         Integer result = sumIntegerNumbers(sourceNumbers);
         assertEquals(expectedResult, result);
@@ -49,7 +57,7 @@ class MathOperationUtilsTest {
     @Test
     void multiplyIntegerNumbersShouldBeSameToExpected() {
         List<Integer> sourceNumbers = Arrays.asList(1, 2, 3, 4);
-        Integer expectedResult = sourceNumbers.stream().reduce((u, v) -> u * v).get();
+        Integer expectedResult = sourceNumbers.stream().reduce((u, v) -> u * v).orElseThrow(IllegalStateException::new);
 
         Integer result = multiplyIntegerNumbers(sourceNumbers);
         assertEquals(expectedResult, result);

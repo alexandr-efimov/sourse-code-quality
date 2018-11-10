@@ -17,7 +17,7 @@ public class MathOperationUtils {
 
         List<Integer> list = new ArrayList<>();
         for (Integer integer : integers) {
-            if (integer % 5 == 0)
+            if (Objects.nonNull(integer) && integer % 5 == 0)
             {
                 list.add(integer);
             }
