@@ -1,7 +1,7 @@
 // Copyright (C) 2018 by Sigma Software Inc. All rights reserved.
 // Released under the terms of the GNU General Public License version 2 or later.
 
-package com.software.sigma.lecture.comment;
+package software.sigma.lecture.comment;
 
 import lombok.AccessLevel;
 import lombok.Data;

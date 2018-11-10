@@ -1,4 +1,4 @@
-package com.software.sigma.lecture.naming;
+package software.sigma.lecture.naming;
 
 import java.time.Instant;
 import java.util.Collections;
