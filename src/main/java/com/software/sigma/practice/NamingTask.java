@@ -1,4 +1,4 @@
-package com.software.sigma.hometask.naming;
+package com.software.sigma.practice;
 
 import org.junit.jupiter.api.Test;
 
