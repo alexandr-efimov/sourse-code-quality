@@ -1,4 +1,4 @@
-package software.sigma.principles.book.common;
+package software.sigma.principles.exercise2.function.model;
 
 public class PathParser {
   public static WikiPagePath parse(String resource) {

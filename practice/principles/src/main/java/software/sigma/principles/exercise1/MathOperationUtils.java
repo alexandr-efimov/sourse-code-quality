@@ -1,4 +1,4 @@
-package software.sigma.principles;
+package software.sigma.principles.exercise1;
 
 import lombok.experimental.UtilityClass;
 

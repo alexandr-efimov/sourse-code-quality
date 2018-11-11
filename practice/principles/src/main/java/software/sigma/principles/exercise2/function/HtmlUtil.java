@@ -1,11 +1,12 @@
-package software.sigma.principles.book.function;
+package software.sigma.principles.exercise2.function;
 
-import software.sigma.principles.book.common.PageCrawlerImpl;
-import software.sigma.principles.book.common.PageData;
-import software.sigma.principles.book.common.PathParser;
-import software.sigma.principles.book.common.SuiteResponder;
-import software.sigma.principles.book.common.WikiPage;
-import software.sigma.principles.book.common.WikiPagePath;
+
+import software.sigma.principles.exercise2.function.model.PageCrawlerImpl;
+import software.sigma.principles.exercise2.function.model.PageData;
+import software.sigma.principles.exercise2.function.model.PathParser;
+import software.sigma.principles.exercise2.function.model.SuiteResponder;
+import software.sigma.principles.exercise2.function.model.WikiPage;
+import software.sigma.principles.exercise2.function.model.WikiPagePath;
 
 // TODO refactor it
 public class HtmlUtil {
@@ -21,7 +22,8 @@ public class HtmlUtil {
                 PageCrawlerImpl.getInheritedPage(
                         SuiteResponder.SUITE_SETUP_NAME, wikiPage
                 );
-        if (suiteSetup != null) {
+        if (suiteSetup != null)
+        {
           WikiPagePath pagePath =
                   suiteSetup.getPageCrawler().getFullPath(suiteSetup);
           String pagePathName = PathParser.render(pagePath);

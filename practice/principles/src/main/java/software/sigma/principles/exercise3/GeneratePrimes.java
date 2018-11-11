@@ -1,4 +1,4 @@
-package software.sigma.principles.book.comment;
+package software.sigma.principles.exercise3;
 
 /**
  * This class Generates prime numbers up to a user specified

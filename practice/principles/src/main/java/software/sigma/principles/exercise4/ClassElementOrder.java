@@ -1,4 +1,4 @@
-package software.sigma.principles;
+package software.sigma.principles.exercise4;
 
 import lombok.AccessLevel;
 import lombok.Data;

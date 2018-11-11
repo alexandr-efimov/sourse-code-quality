@@ -1,4 +1,4 @@
-package software.sigma.principles;
+package software.sigma.principles.exercise1;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,10 +10,10 @@ import static java.util.Collections.emptyList;
 import static java.util.stream.Collectors.toList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static software.sigma.principles.MathOperationUtils.distract;
-import static software.sigma.principles.MathOperationUtils.getThem;
-import static software.sigma.principles.MathOperationUtils.multiplyIntegerNumbers;
-import static software.sigma.principles.MathOperationUtils.sumIntegerNumbers;
+import static software.sigma.principles.exercise1.MathOperationUtils.distract;
+import static software.sigma.principles.exercise1.MathOperationUtils.getThem;
+import static software.sigma.principles.exercise1.MathOperationUtils.multiplyIntegerNumbers;
+import static software.sigma.principles.exercise1.MathOperationUtils.sumIntegerNumbers;
 
 class MathOperationUtilsTest {
 
