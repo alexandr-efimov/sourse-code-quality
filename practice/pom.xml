@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>basic-library-service</module>
-        <module>principles</module>
+        <module>basic-principles</module>
+        <module>advanced-library-service</module>
     </modules>
 </project>
