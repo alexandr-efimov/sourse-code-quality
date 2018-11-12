@@ -27,6 +27,7 @@ public class HtmlUtil {
           WikiPagePath pagePath =
                   suiteSetup.getPageCrawler().getFullPath(suiteSetup);
           String pagePathName = PathParser.render(pagePath);
+//        System.out.println("Add include setup");
           buffer.append("!include -setup .")
                   .append(pagePathName)
 
@@ -36,10 +37,13 @@ public class HtmlUtil {
       WikiPage setup =
               PageCrawlerImpl.getInheritedPage("SetUp", wikiPage);
       if (setup != null) {
+//        System.out.println("Setup not null");
         WikiPagePath setupPath =
                 wikiPage.getPageCrawler()
                         .getFullPath(setup);
+//        System.out.println("Wiki page path: " + wikiPage);
         String setupPathName = PathParser.render(setupPath);
+//        System.out.println("Add include setup");
         buffer.append("!include -setup .")
                 .append(setupPathName)
                 .append("\n");
@@ -53,6 +57,7 @@ public class HtmlUtil {
         WikiPagePath tearDownPath =
                 wikiPage.getPageCrawler().getFullPath(teardown);
         String tearDownPathName = PathParser.render(tearDownPath);
+        //        System.out.println("Add include teardown");
         buffer.append("\n")
                 .append("!include -teardown .")
                 .append(tearDownPathName)
@@ -69,6 +74,7 @@ public class HtmlUtil {
           WikiPagePath pagePath =
                   suiteTeardown.getPageCrawler().getFullPath (suiteTeardown);
           String pagePathName = PathParser.render(pagePath);
+          //        System.out.println("Add include teardown");
           buffer.append("!include -teardown .")
                   .append(pagePathName)
                   .append("\n");
