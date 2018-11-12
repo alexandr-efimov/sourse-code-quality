@@ -81,8 +81,7 @@ public interface DataServices {
      *
      * @return
      */
-    int countActivePatrons();// TODO - this should return null instead of throw
-    // exception
+    int countActivePatrons();
 
     /**
      * Finds a patron using the id
@@ -90,7 +89,7 @@ public interface DataServices {
      * @param id
      * @return
      */
-    Patron findPatron(String id);
+   public Patron searchPatron(String id);
 
     /**
      * Returns a BookTitle object using the submitted String as an ISBN to match

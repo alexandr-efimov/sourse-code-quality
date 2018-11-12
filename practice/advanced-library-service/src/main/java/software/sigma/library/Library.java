@@ -32,7 +32,7 @@ public class Library {
         Book c2 = c.find3(string1);
 
         //find the patron using the patron id
-        Patron p = ds.findPatron(string2);
+        Patron p = ds.searchPatron(string2);
 
         //make a receipt
         Receipt r = new Receipt(p);

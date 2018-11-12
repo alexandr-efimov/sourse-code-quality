@@ -89,7 +89,7 @@ public class MockDataServices implements DataServices {
         patronMap.put(p.getId(), p);
     }
 
-    public Patron findPatron(String string) {
+    public Patron searchPatron(String string) {
         return patronMap.get(string);
     }
 

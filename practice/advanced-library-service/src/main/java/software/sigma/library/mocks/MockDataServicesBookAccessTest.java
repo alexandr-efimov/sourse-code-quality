@@ -4,7 +4,7 @@ package software.sigma.library.mocks;
 import org.junit.jupiter.api.Test;
 import software.sigma.library.models.BookTitle;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MockDataServicesBookAccessTest {
 
@@ -13,7 +13,7 @@ public class MockDataServicesBookAccessTest {
         MockDataServices g = new MockDataServices();
         String id1 = g.addBook(new BookTitle("isbn")).getId();
         String id2 = g.addBook(new BookTitle("isbn")).getId();
-        assertFalse(id1.equals(id2));
+        assertNotEquals(id1, id2);
     }
 
 }

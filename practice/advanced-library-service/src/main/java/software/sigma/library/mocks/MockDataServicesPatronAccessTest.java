@@ -28,7 +28,7 @@ public class MockDataServicesPatronAccessTest {
     public void testAddOne() throws PatronDoesNotExistException {
         ds.addPatron(new Patron("Bob"));
         assertEquals(1, ds.countActivePatrons());
-        Patron p1 = ds.findPatron("Bob");
+        Patron p1 = ds.searchPatron("Bob");
         assertTrue(p1.hasId("Bob"));
     }
 
@@ -38,13 +38,13 @@ public class MockDataServicesPatronAccessTest {
         ds.addPatron(new Patron("Tim"));
         ds.addPatron(new Patron("Dean"));
         assertEquals(3, ds.countActivePatrons());
-        Patron p1 = ds.findPatron("Tim");
+        Patron p1 = ds.searchPatron("Tim");
         assertTrue(p1.hasId("Tim"));
     }
 
     @Test
     public void testRetrieveNonexistant() {
-        assertNull(ds.findPatron("nonesuch"));
+        assertNull(ds.searchPatron("nonesuch"));
     }
 
 }
