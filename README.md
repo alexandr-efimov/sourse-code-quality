@@ -1,6 +1,5 @@
-Practice tasks are slitted into multiple groups:
+Clean Code related tasks skills improvements splitted into few groups:
 - basic
-- middle
 - advanced
 
 
@@ -12,7 +11,6 @@ principles. During refactoring take attention to
 - comments
 - formatting
 - classes and objects 
-- error handling
 
 Approximately refactoring time estimation - up to 4h
 
@@ -20,6 +18,6 @@ Approximately refactoring time estimation - up to 4h
 Simple project with code smells and bad practices usage to be refactored. Taken as assumption that during refactoring 
 you will go according
 clean code related principles, practices and refactoring techniques. Anti patterns used in 
-project should be avoided and replaced best practices.
+project should be avoided and replaced best practices. For more details check readme under appropriate module please.
 
 Approximately refactoring time estimation - up to 4h
