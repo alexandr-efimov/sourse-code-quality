@@ -1,11 +1,11 @@
-Clean Code related tasks, for skills improvements. Tasks splitted into groups:
+Clean Code related tasks for skills improvements. Tasks splitted into groups:
 - basic
 - advanced
 
 
 # Basic 
 Tasks are to refactor everything you think looks strange/unclear/has code smells, according to main clean code 
-principles. During refactoring take attention to 
+principles. During refactoring take attention to: 
 - naming
 - functions
 - comments
