@@ -11,13 +11,13 @@ import software.sigma.principles.exercise2.function.model.WikiPagePath;
 // TODO refactor it
 public class HtmlUtil {
   public static String testableHtml(
-          PageData pageData,
-          boolean includeSuiteSetup
+          PageData page_Data,
+          boolean includeSuite_Setup
   ) throws Exception {
-    WikiPage wikiPage = pageData.getWikiPage();
+    WikiPage wikiPage = page_Data.getWikiPage();
     StringBuffer buffer = new StringBuffer();
-    if (pageData.hasAttribute("Test")) {
-      if (includeSuiteSetup) {
+    if (page_Data.hasAttribute("Test")) {
+      if (includeSuite_Setup) {
         WikiPage suiteSetup =
                 PageCrawlerImpl.getInheritedPage(
                         SuiteResponder.SUITE_SETUP_NAME, wikiPage
@@ -49,8 +49,8 @@ public class HtmlUtil {
                 .append("\n");
       }
     }
-    buffer.append(pageData.getContent());
-    if (pageData.hasAttribute("Test")) {
+    buffer.append(page_Data.getContent());
+    if (page_Data.hasAttribute("Test")) {
       WikiPage teardown =
               PageCrawlerImpl.getInheritedPage("TearDown", wikiPage);
       if (teardown != null) {
@@ -64,7 +64,7 @@ public class HtmlUtil {
                 .append("\n");
       }
 
-      if (includeSuiteSetup) {
+      if (includeSuite_Setup) {
         WikiPage suiteTeardown =
                 PageCrawlerImpl.getInheritedPage(
                         SuiteResponder.SUITE_TEARDOWN_NAME,
@@ -81,7 +81,7 @@ public class HtmlUtil {
         }
       }
     }
-    pageData.setContent(buffer.toString());
-    return pageData.getHtml();
+    page_Data.setContent(buffer.toString());
+    return page_Data.getHtml();
   }
 }

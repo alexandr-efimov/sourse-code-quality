@@ -11,13 +11,12 @@ package software.sigma.principles.exercise3;
  * value.
  *
  */
-// TODO refactor it. Not only comments, but all you think can be refactored.
 public class GeneratePrimes
 {
   /**
    * @param maxValue is the generation limit.
    */
-  public static int[] generatePrimes(int maxValue)
+  public static int[] primeGenerator(int maxValue)
   {
     if (maxValue >= 2) // the only valid case
     {

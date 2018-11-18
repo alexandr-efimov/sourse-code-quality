@@ -10,6 +10,8 @@ interface UserRepository {
     User getUser(String id);
 
     User getUserByUsername(String username);
+
+    User find(String email);
 }
 
 @Log
@@ -21,13 +23,13 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public User getUser(String id) {
+    public User getUserById(String id) {
         User user = userRepository.getUser(id);
 
         if (user == null) {
             return null;
         } else {
-            saveToCache(user);
+            resetPassword(user);
             return user;
         }
     }
@@ -37,8 +39,13 @@ public class UserService {
         return userByUsername;
     }
 
-    private void saveToCache(User user) {
-        log.info("Save to cache: " + user.getId());
+    public User find(String email){
+        User user = userRepository.find(email);
+        return user;
+    }
+
+    private void resetPassword(User user) {
+        log.info("Reset password fo user: " + user.getId());
     }
 
 }
@@ -48,5 +55,6 @@ public class UserService {
 @FieldDefaults(level = AccessLevel.PRIVATE)
 class User {
     String id;
+    String email;
     String username;
 }

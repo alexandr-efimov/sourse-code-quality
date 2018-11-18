@@ -6,7 +6,6 @@ import lombok.experimental.Accessors;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.java.Log;
 
-// TODO fix order of elements(fields, constants, methods etc)
 @Log
 public class ClassElementOrder {
 
