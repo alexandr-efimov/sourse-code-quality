@@ -37,9 +37,9 @@ public class Args {
   private boolean parse() throws ParseException {
     if (schema.length() == 0 && args.length == 0)
       return true;
-    parseSchema();
+      parseSchema();
     try {
-      parseArguments();
+               parseArguments();
     } catch (ArgsException e) {
     }
     return valid;
@@ -60,7 +60,7 @@ public class Args {
     String elementTail = element.substring(1);
     validateSchemaElementId(elementId);
     if (isBooleanSchemaElement(elementTail))
-      parseBooleanSchemaElement(elementId);
+            parseBooleanSchemaElement(elementId);
     else if (isStringSchemaElement(elementTail))
       parseStringSchemaElement(elementId);
     else if (isIntegerSchemaElement(elementTail)) {
@@ -196,7 +196,7 @@ public class Args {
 
   public String usage() {
     if (schema.length() > 0)
-      return "-[" + schema + "]";
+        return "-[" + schema + "]";
     else
       return "";
   }
@@ -258,7 +258,7 @@ public class Args {
     return argsFound.contains(arg);
   }
 
-  public boolean isValid() {
+    public boolean isValid() {
     return valid;
   }
 

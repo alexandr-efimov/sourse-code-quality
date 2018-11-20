@@ -2,7 +2,7 @@ Tasks for refactoring according to clean code principles. Module separated to ex
 example: `software.sigma.principles.exercise1`.
 
 Definition of done (DOD) for all tasks - common DOD part (from main `Readme` file), general clean up of code plus 
-ones for each task(suggested):
+suggested ones for each task:
  - Task 1
     - naming of functions, variables
     - comments, dead code
@@ -22,5 +22,5 @@ ones for each task(suggested):
     - naming - take a look at consistency
     - functions - side effects
  - Task 6
-    - unit tests - fix commented to be passing
+    - unit tests - fix commented tests to be passing(extend business logic after/with refactoring)
     
