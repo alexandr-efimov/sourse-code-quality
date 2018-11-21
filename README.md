@@ -1,4 +1,4 @@
-Clean Code related tasks for skills improvements. Tasks splitted into groups:
+Clean Code related tasks for skills improvements. Tasks were divided into groups:
 - basic
 - advanced
 
@@ -26,7 +26,7 @@ Recommended refactoring time - up to 4h
 # DOD
 Definition of done (DOD) for each task described separately, in each sub module(basic/advanced), but overall common 
 rules are next
- - inspection results (default Intellij Idea inspection profile). Zero or close to it warnings warnings amount. The 
+ - Code inspection results (default Intellij Idea inspection profile). Zero or close to it warnings amount. The 
  less  warnings - the better(Java Doc related warnings can be omitted and not taken into account, you can disable it)
  - Sonar Lint inspection. Same rules -zero or near to it issues amount is best.
  - Unit tests. All existing tests should be with positive results. Adding new tests - additional plus.
