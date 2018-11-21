@@ -32,7 +32,7 @@ class Naming {
         class User {
             private Instant creationDate;
             private Instant modificationDate;
-            private Instant deletionDate;
+            private Instant deleteTimestamp;
         }
     }
 
